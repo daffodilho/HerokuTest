@@ -1,0 +1,15 @@
+@import '_vars';
+@import 'modules/header'; 
+@import 'modules/product';
+@import 'modules/description';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    // overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}

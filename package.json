@@ -1,0 +1,29 @@
+{
+  "name": "herokutest",
+  "version": "1.0.0",
+  "description": "Authoring_HW1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daffodilho/HerokuTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daffodilho/HerokuTest/issues"
+  },
+  "homepage": "https://github.com/daffodilho/HerokuTest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
