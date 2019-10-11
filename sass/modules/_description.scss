@@ -42,3 +42,78 @@
         border: 1px solid $light;
     }
 }
+
+// Tablet Query
+@media screen and (min-width: 768px) {
+    #description {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        line-height: 1.5em;
+        margin: 30px 0;
+    
+        #details {font-size: 1.2em;}
+    
+        #abilities {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+    
+            .ability {
+                width: 25%;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 1.25em;
+            
+                i {font-size: 3em; padding: 30px 0 10px;}
+    
+                h3 {font-size: 0.9em; text-transform: uppercase;}
+    
+                p {font-size: 0.9em;}
+            }
+        }
+    
+        hr {
+            width: 100%;
+            margin-top: 30px;
+            background-color: $light;
+            border: 1px solid $light;
+        }
+    }
+}
+
+// Desktop Query
+@media screen and (min-width: 1024px) {
+    #description {
+        line-height: 2em;
+        margin: 60px 0;
+    
+        #details {font-size: 1.75em;}
+    
+        #abilities {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+    
+            .ability {
+                width: 25%;
+                margin: 0 auto;
+                text-align: center;
+                line-height: 2em;
+            
+                i {font-size: 4em; padding: 60px 0 20px;}
+    
+                h3 {font-size: 1.5em; text-transform: uppercase;}
+    
+                p {font-size: 1.5em;}
+            }
+        }
+    
+        hr {
+            width: 100%;
+            margin-top: 60px;
+        }
+    }
+}
