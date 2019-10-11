@@ -4,25 +4,30 @@
     display: flex;
     flex-flow: row wrap;
 
-    #rating-bars {
-        width: 50%;
-
-        img {width: 100%;}
-    }
-
-    #rating {
-        width: 50%;
-        text-align: center;
-
-        h3 {font-size: 3.5em;}
-
-        ul li {
-            display: inline;
-
-            i {color: $yellow;}
+    #rate-summary {
+        width: 100%;
+        display: flex;
+    
+        #rating-bars {
+            width: 50%;
+    
+            img {width: 100%;}
         }
-
-        h4{font-size: 0.8em; line-height: 2em;}
+    
+        #rating {
+            width: 50%;
+            text-align: center;
+    
+            h3 {font-size: 3.5em;}
+    
+            ul li {
+                display: inline;
+    
+                i {color: $yellow;}
+            }
+    
+            h4{font-size: 0.8em; line-height: 2em;}
+        }
     }
 }
 
@@ -35,11 +40,16 @@
 
     h3 {width: 85%;}
 
-    ul li {
-        display: inline;
+    ul {
+        width: 100%;
         
-        i {color: $yellow; margin: 10px 0;}
-    }
+        li {
+            display: inline;
+            
+            i {color: $yellow; margin: 10px 0;}
+        }
+
+    } 
 
     p {line-height: 1.5em;}
 }
@@ -52,4 +62,108 @@ hr {
 #button {
     color: $main;
     margin-bottom: 20px;
+}
+
+// Tablet Query
+@media screen and (min-width: 768px) {
+    
+    #reviews {
+        justify-content: space-between;
+        align-items: flex-start;
+
+        #rate-summary {
+            width: 30%;
+            flex-direction: column-reverse;
+    
+            #rating-bars {width: 100%;}
+    
+            #rating {
+                width: 100%;
+                text-align: center;
+    
+                h3 {font-size: 3.5em;}
+    
+                ul li {
+                    display: inline;
+    
+                    i {color: $yellow;}
+                }
+    
+                h4{font-size: 0.8em; line-height: 2em;}
+            }
+        }
+    
+        #user-reviews{
+            width: 60%;
+        }
+
+        .user {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 0 30px;
+    
+            .fa-user-circle {font-size: 2.25em; width: 10%;}
+    
+            h3 {width: 90%;}
+    
+            ul li {
+                display: inline;
+            
+                i {color: $yellow; margin: 10px 0;}
+            }
+    
+            p {line-height: 1.5em;}
+        }
+
+        hr {
+            margin: -10px 0 20px;
+            background-color: $light;
+            border: 1px solid $light;
+        }
+    }
+}
+
+// Desktop Query
+@media screen and (min-width: 1024px) {
+    #reviews {
+        margin-bottom: 40px;
+
+        #rate-summary {
+            width: 20%;
+        
+            #rating {
+                h3 {font-size: 5em;}
+                ul li i {font-size: 1.25em;}
+                h4 {font-size: 1em;}
+            }
+        }
+
+        #user-reviews{width: 75%;}
+
+        .user {
+            margin: 0 0 30px;
+    
+            .fa-user-circle {font-size: 2.5em; width: 5%;}
+    
+            h3 {width: 95%; font-size: 1.25em;}
+    
+            ul li {
+                display: inline;
+            
+                i {font-size: 1.25em; margin: 10px 0;}
+            }
+    
+            p {font-size: 1.25em; line-height: 1.75em;}
+        }
+
+        hr {
+            margin: -10px 0 20px;
+            background-color: $light;
+            border: 1px solid $light;
+        }
+
+        #button {
+            font-size: 1.25em;
+        }
+    }   
 }

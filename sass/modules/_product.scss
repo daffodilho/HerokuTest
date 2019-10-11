@@ -29,3 +29,51 @@
         border: 1px solid $light;
     }
 }
+
+// Tablet Query
+@media screen and (min-width: 768px) {
+    #product {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    
+        #product-image {width: 50%;}
+    
+        #product-info {
+            width: 40%;
+            margin: auto 5%;
+            line-height: 1.5em;
+            font-size: 1.5em;
+        }
+    
+        hr {
+            width: 100%;
+            position: relative;
+            top: -9px;
+        }
+    }
+}
+
+// Desktop Query
+@media screen and (min-width: 1024px) {
+    #product {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    
+        #product-image {width: 50%;}
+    
+        #product-info {
+            width: 40%;
+            margin: auto 5%;
+            line-height: 1.5em;
+            font-size: 2em;
+        }
+    
+        hr {
+            width: 100%;
+            position: relative;
+            top: -9px;
+        }
+    }
+}

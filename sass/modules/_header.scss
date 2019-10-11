@@ -1,17 +1,14 @@
 header {
     background-color:$dark;
     width: 100%;
-    height: 45px;
+    height: 100%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 
     #logo {
         width: 60%;
-
-        img {
-            padding-left: 10px;
-        }
+        padding: 10px 0;
     }
 
     #hamburger {
@@ -29,20 +26,80 @@ header {
 
 #navbar {
     width: 100%;
+    display: none;
 
     li {
         width: 100%;
-        height: 45px;
+        height: 100%;
         background-color: $dark;
         border-top: 1px solid $light;
+        padding: 10px 0 10px 10px;
 
         a {
             text-decoration: none;
             color: $light;
             text-transform: uppercase;
-            line-height: 45px;
-            padding-left: 10px;
         }
     }
 }
 
+// Tablet Query
+@media screen and (min-width: 768px) {
+    header {
+        #logo {
+            width: 100%;
+            text-align: center;
+            
+            img {padding-left: 0; width: 30%;}
+        }
+    
+        #hamburger {display: none;}
+    }
+    
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    
+        li {padding: 5px 0 5px 10px;
+    
+            a {
+                text-decoration: none;
+                color: $light;
+                text-transform: uppercase;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+// Desktop Query
+@media screen and (min-width: 1024px) {
+    header {
+        #logo {
+            width: 100%;
+            text-align: center;
+            
+            img {padding-left: 0; width: 30%;}
+        }
+    
+        #hamburger {display: none;}
+    }
+    
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    
+        li {padding: 5px 0 5px 10px;
+    
+            a {
+                font-size: 1.5em;
+                text-decoration: none;
+                color: $light;
+                text-transform: uppercase;
+                line-height: 45px;
+            }
+        }
+    }
+}
