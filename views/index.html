@@ -19,11 +19,17 @@
 
         <header>
             <h2 class="hidden">Header</h3>
-            <img src="../images/logo.svg" alt="" id="logo">
-
-            <object data="../images/hamburger.svg" type="images/svg+xml">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="hamburger"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-            </object>
+            
+            <div id="logo">
+                <img src="../images/logo.svg" alt="">
+            </div>
+            
+            <div id="hamburger">
+                <object data="../images/hamburger.svg" type="images/svg+xml">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+                </object>
+            </div>
+            
 
             <ul id="navbar" class="hidden">
                 <li><a href="#">About Us</a></li>
@@ -77,23 +83,89 @@
                 <div class="ability">
                     <i class="fas fa-brain"></i>
                     <h3>Telepathy</h3>
-                    <p>Allows you to control small objects at ease.</p>
+                    <p>Read the minds of people within a 100 meter radius.</p>
                 </div>
 
                 <div class="ability">
                     <i class="fas fa-eye"></i>                        <h3>Memory</h3>
-                    <p>Allows you to control small objects at ease.</p>
+                    <p>Remember everything for a limited period of time.</p>
                 </div>
 
                 <div class="ability">
                     <i class="fas fa-comment"></i>                  <h3>Language</h3>
-                    <p>Allows you to control small objects at ease.</p>
+                    <p>Understand and speak any existing language.</p>
                 </div>    
-
-                
             </div>
-            
+            <hr>
         </section>
+
+        <section id="reviews">
+            <h2 class="hidden">Reviews</h2>
+            <div id="rating-bars">
+                <img src="../images/rating.png" alt="">
+            </div>
+
+            <div id="rating">
+                <h3>5.0</h3>
+                <ul>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                </ul>
+                <h4>15 reviews</h4>
+            </div>
+
+            <div id="user-reviews">
+                <div class="user">
+                    <i class="far fa-user-circle"></i>
+                    <h3>Rachel Yapp<br>2 days ago</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>    
+                    <p>I love these! Everything is awesome! Too bad they only last for an hour. </p>
+                </div>
+                <hr>
+                <div class="user">
+                    <i class="far fa-user-circle"></i>
+                    <h3>Gabriel Tham<br>5 days ago</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>    
+                    <p>I can understand and talk to my dog now.</p>
+                </div>
+                <hr>
+                <div class="user">
+                    <i class="far fa-user-circle"></i>
+                    <h3>Joceline Justin<br>1 week ago</h3>
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>    
+                    <p>Works like a charm, and taste just like candy.  Never knew these existed until a mage friend introduced me.  Will definitely buy again!</p>
+                </div>
+
+                <h3 id="button">SEE ALL REVIEWS</h3>
+            </div>
+        </section>
+
+        <footer>
+            <h2 class="hidden">Footer</h2>
+            <h3>2019 © Wonderpills.  All Rights Reserved.</h3>
+        </footer>
+        
 
     </main>
     

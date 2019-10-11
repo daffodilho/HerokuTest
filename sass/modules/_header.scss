@@ -5,20 +5,25 @@ header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-}
 
-#logo {
-    width: 60%;
-    height: 45px;
+    #logo {
+        width: 60%;
 
-}
+        img {
+            padding-left: 10px;
+        }
+    }
 
-object {
-    width: 40%;
-    text-align: right;
+    #hamburger {
+        width: 40%;
+        text-align: right;
 
-    svg path {
-        fill: $light;
+        object {
+            padding-right: 10px;
+        }
+        svg path {
+            fill: $light;
+        }
     }
 }
 
