@@ -10,7 +10,8 @@ One page promo web app for Wonderpills' new product - BRAIN POWER BOOST! Design 
 * CSS
 * JavaScript
 * SASS
-* Node.js
+* Node
+* Express
 
 ### DevDependencies
 
